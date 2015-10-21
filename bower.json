@@ -1,0 +1,18 @@
+{
+  "name": "beforeafter-image",
+  "description": "",
+  "keywords": [
+    ""
+  ],
+  "main": [
+    "beforeafter-image.html"
+  ],
+  "ignore": [
+    "**/.*",
+    "**/*.json"
+  ],
+  "license": "http://www.wtfpl.net/about/",
+  "author": {
+    "name": "Benjamin Mosnier"
+  }
+}

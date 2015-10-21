@@ -1,0 +1,81 @@
+:host {
+	display: block;
+	position: relative;
+
+	*{
+		user-select: none;
+	}
+
+	::content img{
+		display: block;
+	}
+}
+
+// Contient  le #wrapper + img responsive
+#wrapper-container{
+	position: relative;
+	background: orangered;
+
+	img{
+		display: block;
+		width: 100%;
+		height: auto;
+		background: #E8FF00;
+	}
+}
+
+// Contient les 2 images
+#wrapper{
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+
+	&.sliding{
+		.fa-hand-rock-o{
+			display: block;
+		}
+
+		.fa-hand-paper-o{
+			display: none;
+		}
+	}
+
+	.fa-hand-rock-o{
+		display: none;
+	}
+
+	.fa-hand-paper-o{
+		display: block;
+	}
+}
+
+
+#wrapper-above{
+	z-index: 6;
+	position: absolute;
+	top: 0;
+}
+
+#wrapper-under{
+	z-index: 10;
+}
+
+#slider-wrapper{
+	position: absolute;
+	z-index: 666;
+	top: 50%; right: 0; left: 0;
+
+	#slider{
+		//visibility: hidden;
+	}
+}
+
+
+
+//-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+
+@import "vertical";
+@import "slider";
